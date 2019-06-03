@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 51;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		8F91444522A544DD00B18ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F91444322A544DD00B18ED6 /* Main.storyboard */; };
+		8F91444722A544DF00B18ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F91444622A544DF00B18ED6 /* Assets.xcassets */; };
+		8F91444A22A544DF00B18ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F91444822A544DF00B18ED6 /* LaunchScreen.storyboard */; };
+		8F91444D22A544DF00B18ED6 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91444C22A544DF00B18ED6 /* main.m */; };
+		8F91445A22A5462900B18ED6 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91445722A5462900B18ED6 /* AppDelegate.m */; };
+		8F91445B22A5462900B18ED6 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91445922A5462900B18ED6 /* ViewController.m */; };
+		8F91448322A5476200B18ED6 /* BaseConnectionController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446022A5476200B18ED6 /* BaseConnectionController.m */; };
+		8F91448422A5476200B18ED6 /* BaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446222A5476200B18ED6 /* BaseNavigationController.m */; };
+		8F91448522A5476200B18ED6 /* BaseRefreshController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446422A5476200B18ED6 /* BaseRefreshController.m */; };
+		8F91448622A5476200B18ED6 /* BaseTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446622A5476200B18ED6 /* BaseTableViewController.m */; };
+		8F91448722A5476200B18ED6 /* BaseViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446822A5476200B18ED6 /* BaseViewController.m */; };
+		8F91448822A5476200B18ED6 /* BaseMacro.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446B22A5476200B18ED6 /* BaseMacro.m */; };
+		8F91448922A5476200B18ED6 /* BaseModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446D22A5476200B18ED6 /* BaseModel.m */; };
+		8F91448A22A5476200B18ED6 /* BaseNetModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91446F22A5476200B18ED6 /* BaseNetModel.m */; };
+		8F91448B22A5476200B18ED6 /* BaseDataQueue.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91447222A5476200B18ED6 /* BaseDataQueue.m */; };
+		8F91448C22A5476200B18ED6 /* BaseNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91447422A5476200B18ED6 /* BaseNetManager.m */; };
+		8F91448D22A5476200B18ED6 /* BaseNetTool.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91447622A5476200B18ED6 /* BaseNetTool.m */; };
+		8F91448E22A5476200B18ED6 /* BaseCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91447922A5476200B18ED6 /* BaseCell.m */; };
+		8F91448F22A5476200B18ED6 /* BaseTableView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91447B22A5476200B18ED6 /* BaseTableView.m */; };
+		8F91449022A5476200B18ED6 /* BaseView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91447D22A5476200B18ED6 /* BaseView.m */; };
+		8F91449122A5476200B18ED6 /* BaseWebController.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91448022A5476200B18ED6 /* BaseWebController.m */; };
+		8F91449222A5476300B18ED6 /* ProgressWKWebView.m in Sources */ = {isa = PBXBuildFile; fileRef = 8F91448222A5476200B18ED6 /* ProgressWKWebView.m */; };
+		F3B9F554CD2142331661BD39 /* libPods-GKSongApp.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 5CAB744FA121BE0DF2995175 /* libPods-GKSongApp.a */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		5CAB744FA121BE0DF2995175 /* libPods-GKSongApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GKSongApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		5CF5896AE96EDD1758DADA64 /* Pods-GKSongApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKSongApp.release.xcconfig"; path = "Target Support Files/Pods-GKSongApp/Pods-GKSongApp.release.xcconfig"; sourceTree = "<group>"; };
+		8F91443A22A544DD00B18ED6 /* GKSongApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKSongApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		8F91444422A544DD00B18ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		8F91444622A544DF00B18ED6 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		8F91444922A544DF00B18ED6 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		8F91444B22A544DF00B18ED6 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		8F91444C22A544DF00B18ED6 /* main.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = main.m; sourceTree = "<group>"; };
+		8F91445622A5462900B18ED6 /* AppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
+		8F91445722A5462900B18ED6 /* AppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
+		8F91445822A5462900B18ED6 /* ViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ViewController.h; sourceTree = "<group>"; };
+		8F91445922A5462900B18ED6 /* ViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ViewController.m; sourceTree = "<group>"; };
+		8F91445C22A5465B00B18ED6 /* GKSongApp.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSongApp.pch; sourceTree = "<group>"; };
+		8F91445F22A5476200B18ED6 /* BaseConnectionController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseConnectionController.h; sourceTree = "<group>"; };
+		8F91446022A5476200B18ED6 /* BaseConnectionController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseConnectionController.m; sourceTree = "<group>"; };
+		8F91446122A5476200B18ED6 /* BaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNavigationController.h; sourceTree = "<group>"; };
+		8F91446222A5476200B18ED6 /* BaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNavigationController.m; sourceTree = "<group>"; };
+		8F91446322A5476200B18ED6 /* BaseRefreshController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseRefreshController.h; sourceTree = "<group>"; };
+		8F91446422A5476200B18ED6 /* BaseRefreshController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseRefreshController.m; sourceTree = "<group>"; };
+		8F91446522A5476200B18ED6 /* BaseTableViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableViewController.h; sourceTree = "<group>"; };
+		8F91446622A5476200B18ED6 /* BaseTableViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableViewController.m; sourceTree = "<group>"; };
+		8F91446722A5476200B18ED6 /* BaseViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseViewController.h; sourceTree = "<group>"; };
+		8F91446822A5476200B18ED6 /* BaseViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseViewController.m; sourceTree = "<group>"; };
+		8F91446A22A5476200B18ED6 /* BaseMacro.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseMacro.h; sourceTree = "<group>"; };
+		8F91446B22A5476200B18ED6 /* BaseMacro.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseMacro.m; sourceTree = "<group>"; };
+		8F91446C22A5476200B18ED6 /* BaseModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseModel.h; sourceTree = "<group>"; };
+		8F91446D22A5476200B18ED6 /* BaseModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseModel.m; sourceTree = "<group>"; };
+		8F91446E22A5476200B18ED6 /* BaseNetModel.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetModel.h; sourceTree = "<group>"; };
+		8F91446F22A5476200B18ED6 /* BaseNetModel.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetModel.m; sourceTree = "<group>"; };
+		8F91447122A5476200B18ED6 /* BaseDataQueue.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseDataQueue.h; sourceTree = "<group>"; };
+		8F91447222A5476200B18ED6 /* BaseDataQueue.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseDataQueue.m; sourceTree = "<group>"; };
+		8F91447322A5476200B18ED6 /* BaseNetManager.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetManager.h; sourceTree = "<group>"; };
+		8F91447422A5476200B18ED6 /* BaseNetManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetManager.m; sourceTree = "<group>"; };
+		8F91447522A5476200B18ED6 /* BaseNetTool.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseNetTool.h; sourceTree = "<group>"; };
+		8F91447622A5476200B18ED6 /* BaseNetTool.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseNetTool.m; sourceTree = "<group>"; };
+		8F91447822A5476200B18ED6 /* BaseCell.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseCell.h; sourceTree = "<group>"; };
+		8F91447922A5476200B18ED6 /* BaseCell.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseCell.m; sourceTree = "<group>"; };
+		8F91447A22A5476200B18ED6 /* BaseTableView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseTableView.h; sourceTree = "<group>"; };
+		8F91447B22A5476200B18ED6 /* BaseTableView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseTableView.m; sourceTree = "<group>"; };
+		8F91447C22A5476200B18ED6 /* BaseView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseView.h; sourceTree = "<group>"; };
+		8F91447D22A5476200B18ED6 /* BaseView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseView.m; sourceTree = "<group>"; };
+		8F91447F22A5476200B18ED6 /* BaseWebController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BaseWebController.h; sourceTree = "<group>"; };
+		8F91448022A5476200B18ED6 /* BaseWebController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BaseWebController.m; sourceTree = "<group>"; };
+		8F91448122A5476200B18ED6 /* ProgressWKWebView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ProgressWKWebView.h; sourceTree = "<group>"; };
+		8F91448222A5476200B18ED6 /* ProgressWKWebView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ProgressWKWebView.m; sourceTree = "<group>"; };
+		DF25CADD72FE57F7575B8EC0 /* Pods-GKSongApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKSongApp.debug.xcconfig"; path = "Target Support Files/Pods-GKSongApp/Pods-GKSongApp.debug.xcconfig"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		8F91443722A544DD00B18ED6 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F3B9F554CD2142331661BD39 /* libPods-GKSongApp.a in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		8F91443122A544DD00B18ED6 = {
+			isa = PBXGroup;
+			children = (
+				8F91443C22A544DD00B18ED6 /* GKSongApp */,
+				8F91443B22A544DD00B18ED6 /* Products */,
+				99C1EAA5472F987FEB44279A /* Pods */,
+				A6DF6450FE82A398C9DA9A61 /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		8F91443B22A544DD00B18ED6 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				8F91443A22A544DD00B18ED6 /* GKSongApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		8F91443C22A544DD00B18ED6 /* GKSongApp */ = {
+			isa = PBXGroup;
+			children = (
+				8F91445D22A5476200B18ED6 /* Base */,
+				8F91445522A5462900B18ED6 /* Class */,
+				8F91445422A5462800B18ED6 /* Tool */,
+				8F91444322A544DD00B18ED6 /* Main.storyboard */,
+				8F91444622A544DF00B18ED6 /* Assets.xcassets */,
+				8F91444822A544DF00B18ED6 /* LaunchScreen.storyboard */,
+				8F91444B22A544DF00B18ED6 /* Info.plist */,
+				8F91444C22A544DF00B18ED6 /* main.m */,
+			);
+			path = GKSongApp;
+			sourceTree = "<group>";
+		};
+		8F91445422A5462800B18ED6 /* Tool */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Tool;
+			sourceTree = "<group>";
+		};
+		8F91445522A5462900B18ED6 /* Class */ = {
+			isa = PBXGroup;
+			children = (
+				8F91445622A5462900B18ED6 /* AppDelegate.h */,
+				8F91445722A5462900B18ED6 /* AppDelegate.m */,
+				8F91445C22A5465B00B18ED6 /* GKSongApp.pch */,
+				8F91445822A5462900B18ED6 /* ViewController.h */,
+				8F91445922A5462900B18ED6 /* ViewController.m */,
+			);
+			path = Class;
+			sourceTree = "<group>";
+		};
+		8F91445D22A5476200B18ED6 /* Base */ = {
+			isa = PBXGroup;
+			children = (
+				8F91445E22A5476200B18ED6 /* Controller */,
+				8F91446922A5476200B18ED6 /* Model */,
+				8F91447022A5476200B18ED6 /* NetManager */,
+				8F91447722A5476200B18ED6 /* View */,
+				8F91447E22A5476200B18ED6 /* Web */,
+			);
+			path = Base;
+			sourceTree = "<group>";
+		};
+		8F91445E22A5476200B18ED6 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				8F91445F22A5476200B18ED6 /* BaseConnectionController.h */,
+				8F91446022A5476200B18ED6 /* BaseConnectionController.m */,
+				8F91446122A5476200B18ED6 /* BaseNavigationController.h */,
+				8F91446222A5476200B18ED6 /* BaseNavigationController.m */,
+				8F91446322A5476200B18ED6 /* BaseRefreshController.h */,
+				8F91446422A5476200B18ED6 /* BaseRefreshController.m */,
+				8F91446522A5476200B18ED6 /* BaseTableViewController.h */,
+				8F91446622A5476200B18ED6 /* BaseTableViewController.m */,
+				8F91446722A5476200B18ED6 /* BaseViewController.h */,
+				8F91446822A5476200B18ED6 /* BaseViewController.m */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		8F91446922A5476200B18ED6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				8F91446A22A5476200B18ED6 /* BaseMacro.h */,
+				8F91446B22A5476200B18ED6 /* BaseMacro.m */,
+				8F91446C22A5476200B18ED6 /* BaseModel.h */,
+				8F91446D22A5476200B18ED6 /* BaseModel.m */,
+				8F91446E22A5476200B18ED6 /* BaseNetModel.h */,
+				8F91446F22A5476200B18ED6 /* BaseNetModel.m */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		8F91447022A5476200B18ED6 /* NetManager */ = {
+			isa = PBXGroup;
+			children = (
+				8F91447122A5476200B18ED6 /* BaseDataQueue.h */,
+				8F91447222A5476200B18ED6 /* BaseDataQueue.m */,
+				8F91447322A5476200B18ED6 /* BaseNetManager.h */,
+				8F91447422A5476200B18ED6 /* BaseNetManager.m */,
+				8F91447522A5476200B18ED6 /* BaseNetTool.h */,
+				8F91447622A5476200B18ED6 /* BaseNetTool.m */,
+			);
+			path = NetManager;
+			sourceTree = "<group>";
+		};
+		8F91447722A5476200B18ED6 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				8F91447822A5476200B18ED6 /* BaseCell.h */,
+				8F91447922A5476200B18ED6 /* BaseCell.m */,
+				8F91447A22A5476200B18ED6 /* BaseTableView.h */,
+				8F91447B22A5476200B18ED6 /* BaseTableView.m */,
+				8F91447C22A5476200B18ED6 /* BaseView.h */,
+				8F91447D22A5476200B18ED6 /* BaseView.m */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		8F91447E22A5476200B18ED6 /* Web */ = {
+			isa = PBXGroup;
+			children = (
+				8F91447F22A5476200B18ED6 /* BaseWebController.h */,
+				8F91448022A5476200B18ED6 /* BaseWebController.m */,
+				8F91448122A5476200B18ED6 /* ProgressWKWebView.h */,
+				8F91448222A5476200B18ED6 /* ProgressWKWebView.m */,
+			);
+			path = Web;
+			sourceTree = "<group>";
+		};
+		99C1EAA5472F987FEB44279A /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				DF25CADD72FE57F7575B8EC0 /* Pods-GKSongApp.debug.xcconfig */,
+				5CF5896AE96EDD1758DADA64 /* Pods-GKSongApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		A6DF6450FE82A398C9DA9A61 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				5CAB744FA121BE0DF2995175 /* libPods-GKSongApp.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		8F91443922A544DD00B18ED6 /* GKSongApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 8F91445022A544DF00B18ED6 /* Build configuration list for PBXNativeTarget "GKSongApp" */;
+			buildPhases = (
+				C837869C7578B24651B19DFD /* [CP] Check Pods Manifest.lock */,
+				8F91443622A544DD00B18ED6 /* Sources */,
+				8F91443722A544DD00B18ED6 /* Frameworks */,
+				8F91443822A544DD00B18ED6 /* Resources */,
+				416AB7359F088C928FC37DBA /* [CP] Copy Pods Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = GKSongApp;
+			productName = GKSongApp;
+			productReference = 8F91443A22A544DD00B18ED6 /* GKSongApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		8F91443222A544DD00B18ED6 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastUpgradeCheck = 1020;
+				ORGANIZATIONNAME = "王炜圣";
+				TargetAttributes = {
+					8F91443922A544DD00B18ED6 = {
+						CreatedOnToolsVersion = 10.2.1;
+					};
+				};
+			};
+			buildConfigurationList = 8F91443522A544DD00B18ED6 /* Build configuration list for PBXProject "GKSongApp" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = 8F91443122A544DD00B18ED6;
+			productRefGroup = 8F91443B22A544DD00B18ED6 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				8F91443922A544DD00B18ED6 /* GKSongApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		8F91443822A544DD00B18ED6 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F91444A22A544DF00B18ED6 /* LaunchScreen.storyboard in Resources */,
+				8F91444722A544DF00B18ED6 /* Assets.xcassets in Resources */,
+				8F91444522A544DD00B18ED6 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		416AB7359F088C928FC37DBA /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GKSongApp/Pods-GKSongApp-resources-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Copy Pods Resources";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-GKSongApp/Pods-GKSongApp-resources-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-GKSongApp/Pods-GKSongApp-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C837869C7578B24651B19DFD /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-GKSongApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		8F91443622A544DD00B18ED6 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				8F91449022A5476200B18ED6 /* BaseView.m in Sources */,
+				8F91448822A5476200B18ED6 /* BaseMacro.m in Sources */,
+				8F91448322A5476200B18ED6 /* BaseConnectionController.m in Sources */,
+				8F91449222A5476300B18ED6 /* ProgressWKWebView.m in Sources */,
+				8F91448E22A5476200B18ED6 /* BaseCell.m in Sources */,
+				8F91448722A5476200B18ED6 /* BaseViewController.m in Sources */,
+				8F91449122A5476200B18ED6 /* BaseWebController.m in Sources */,
+				8F91445B22A5462900B18ED6 /* ViewController.m in Sources */,
+				8F91448D22A5476200B18ED6 /* BaseNetTool.m in Sources */,
+				8F91448B22A5476200B18ED6 /* BaseDataQueue.m in Sources */,
+				8F91448C22A5476200B18ED6 /* BaseNetManager.m in Sources */,
+				8F91448F22A5476200B18ED6 /* BaseTableView.m in Sources */,
+				8F91448A22A5476200B18ED6 /* BaseNetModel.m in Sources */,
+				8F91445A22A5462900B18ED6 /* AppDelegate.m in Sources */,
+				8F91448622A5476200B18ED6 /* BaseTableViewController.m in Sources */,
+				8F91444D22A544DF00B18ED6 /* main.m in Sources */,
+				8F91448522A5476200B18ED6 /* BaseRefreshController.m in Sources */,
+				8F91448922A5476200B18ED6 /* BaseModel.m in Sources */,
+				8F91448422A5476200B18ED6 /* BaseNavigationController.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		8F91444322A544DD00B18ED6 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F91444422A544DD00B18ED6 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		8F91444822A544DF00B18ED6 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				8F91444922A544DF00B18ED6 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		8F91444E22A544DF00B18ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+			};
+			name = Debug;
+		};
+		8F91444F22A544DF00B18ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				CODE_SIGN_IDENTITY = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 12.2;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		8F91445122A544DF00B18ED6 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DF25CADD72FE57F7575B8EC0 /* Pods-GKSongApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GKSongApp/Class/GKSongApp.pch";
+				INFOPLIST_FILE = GKSongApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GKSongApp.GKSongApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		8F91445222A544DF00B18ED6 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 5CF5896AE96EDD1758DADA64 /* Pods-GKSongApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				CODE_SIGN_STYLE = Manual;
+				DEVELOPMENT_TEAM = "";
+				GCC_INCREASE_PRECOMPILED_HEADER_SHARING = NO;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "$(SRCROOT)/GKSongApp/Class/GKSongApp.pch";
+				INFOPLIST_FILE = GKSongApp/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = GKSongApp.GKSongApp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		8F91443522A544DD00B18ED6 /* Build configuration list for PBXProject "GKSongApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F91444E22A544DF00B18ED6 /* Debug */,
+				8F91444F22A544DF00B18ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		8F91445022A544DF00B18ED6 /* Build configuration list for PBXNativeTarget "GKSongApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				8F91445122A544DF00B18ED6 /* Debug */,
+				8F91445222A544DF00B18ED6 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 8F91443222A544DD00B18ED6 /* Project object */;
+}
