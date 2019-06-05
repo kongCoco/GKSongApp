@@ -11,7 +11,7 @@
 @implementation BaseNetModel
 
 + (NSDictionary<NSString *,id> *)modelCustomPropertyMapper {
-    return @{@"msg" : @[@"msg", @"err",@"error"],@"resultset":@[@"resultset",@"res",@"result"],@"code":@[@"code",@"errorCode"]};
+    return @{@"msg" : @[@"msg", @"err",@"error"],@"resultset":@[@"resultset",@"res",@"result"],@"code":@[@"code",@"errorCode",@"ret"]};
 }
 //数据是否正常
 -(BOOL)isDataSuccess

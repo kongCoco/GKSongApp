@@ -1,3 +1,4 @@
+source 'https://mirrors.tuna.tsinghua.edu.cn/git/CocoaPods/Specs.git'
 platform :ios, '8.0'
 #use_frameworks!
 
@@ -5,6 +6,10 @@ inhibit_all_warnings!
 
 target :GKSongApp  do
     #-------- 开源第三方库 -----
+    pod 'MMPopupView', :git => 'https://github.com/CoderLT/MMPopupView.git'
+    pod 'MJRefresh', :git => 'https://github.com/CoderLT/MJRefresh.git'
+    pod 'MBProgressHUD',:git => 'https://github.com/tianya2416/MBProgress.git'
+    pod 'VTMagic',:git => 'https://github.com/tianya2416/VTMagicMacro.git'
     pod 'AppBaseCategory'
     pod 'FMDB'
     pod 'Masonry'
@@ -13,10 +18,6 @@ target :GKSongApp  do
     pod 'SDWebImage'
     pod 'EAIntroView'
     pod 'IDMPhotoBrowser'
-    pod 'MMPopupView', :git => 'https://github.com/CoderLT/MMPopupView.git'
-    pod 'MJRefresh', :git => 'https://github.com/CoderLT/MJRefresh.git'
-    pod 'MBProgressHUD',:git => 'https://github.com/tianya2416/MBProgress.git'
-    pod 'VTMagic',:git => 'https://github.com/tianya2416/VTMagicMacro.git'
     pod 'DZNEmptyDataSet'
     pod 'KVOController'
     pod 'QBImagePickerController'

@@ -13,8 +13,7 @@
 @end
 
 @implementation BaseViewController
-- (void)dealloc
-{
+- (void)dealloc{
     NSLog(@"%s", __FUNCTION__);
 }
 - (void)viewDidLoad {
@@ -32,13 +31,11 @@
     [super viewWillDisappear:animated];
     [self setKeyBoardDismiss];
 }
--(void)viewWillAppear:(BOOL)animated
-{
+- (void)viewWillAppear:(BOOL)animated{
     [super viewWillAppear:animated];
 }
 #pragma mark UIGestureRecognizerDelegate
-- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer
-{
+- (BOOL)gestureRecognizerShouldBegin:(UIGestureRecognizer *)gestureRecognizer{
     return YES ;
 }
 - (UIStatusBarStyle)preferredStatusBarStyle{

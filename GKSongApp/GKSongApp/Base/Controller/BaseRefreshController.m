@@ -15,11 +15,15 @@
     BOOL _needReload;
     __weak UIView *_emptyView;
 }
+@property (nonatomic, weak) UIScrollView *scrollView;
+@property (nonatomic, strong) NSDate *lastRefreshDate;
 @property (nonatomic, copy) NSString *emptyTitle;
 @property (nonatomic, assign) NSInteger currentPage;
 @property (nonatomic, strong) UIImage *emptyImage;
+@property (nonatomic, strong) UIImage *loadImage;
 @property (nonatomic, assign) BOOL isRefreshing;
 @property (nonatomic, assign) BOOL reachable;
+@property (nonatomic, strong) NSMutableArray *images;
 @end
 
 @implementation BaseRefreshController
@@ -37,17 +41,9 @@
         header.automaticallyChangeAlpha = YES;
         header.lastUpdatedTimeLabel.hidden = YES;
         header.stateLabel.hidden = YES;
-        NSMutableArray * images = [NSMutableArray array];
-        for (int i = 1; i <= 95; i++) {
-            UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"下拉loading_%04d.png", i]];
-            if (!image) {
-                break;
-            }
-            [images addObject:image];
-        }
-        if (images.count > 0) {
-            [header setImages:@[images.firstObject] forState:MJRefreshStateIdle];
-            [header setImages:images duration:1 forState:MJRefreshStateRefreshing];
+        if (self.images.count > 0) {
+            [header setImages:@[self.images.firstObject] forState:MJRefreshStateIdle];
+            [header setImages:self.images duration:0.4f forState:MJRefreshStateRefreshing];
         }
         
         if (option & ATHeaderAutoRefresh) {
@@ -61,18 +57,10 @@
         footer.triggerAutomaticallyRefreshPercent = -20.0f;
         footer.stateLabel.hidden = NO;
         footer.labelLeftInset = -22;
-        
-        NSMutableArray * images = [NSMutableArray array];
-        for (int i = 1; i <= 35; i++) {
-            UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"上拉loading_%04d.png", i]];
-            if (!image) {
-                break;
-            }
-            [images addObject:image];
-        }
-        if (images.count > 0) {
-            [footer setImages:@[images[0]] forState:MJRefreshStateIdle];
-            [footer setImages:images duration:1.0f forState:MJRefreshStateRefreshing];
+    
+        if (self.images.count > 0) {
+            [footer setImages:@[self.images[0]] forState:MJRefreshStateIdle];
+            [footer setImages:self.images duration:0.40f forState:MJRefreshStateRefreshing];
         }
         [footer setTitle:@"已经到底了" forState:MJRefreshStateNoMoreData];
         [footer setTitle:@"" forState:MJRefreshStatePulling];
@@ -200,7 +188,7 @@
     paragraph.lineBreakMode = NSLineBreakByWordWrapping;
     paragraph.alignment = NSTextAlignmentCenter;
     NSString *text = self.isRefreshing ? FDMSG_Home_DataRefresh : self.emptyTitle;
-    NSDictionary* attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:16.0f],
+    NSDictionary* attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:14.0f],
                                  NSForegroundColorAttributeName :self.isRefreshing ?AppColor :Appx999999,
                                  NSParagraphStyleAttributeName : paragraph};
     if (![self reachable]) {
@@ -213,7 +201,7 @@
     return nil;
 }
 - (UIImage *)imageForEmptyDataSet:(UIScrollView *)scrollView {
-    UIImage *imageEmpty = self.isRefreshing ? defaultDataLoad : self.emptyImage;
+    UIImage *imageEmpty = self.isRefreshing ? self.loadImage : self.emptyImage;
     return self.reachable ?imageEmpty : defaultNetError;
 }
 
@@ -225,16 +213,16 @@
     return NO;//self.isRefreshing;
 }
 // 给图片添加动画
-- (CAAnimation *)imageAnimationForEmptyDataSet:(UIScrollView *) scrollView{
-    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
-    animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
-    animation.toValue = [NSValue valueWithCATransform3D: CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0) ];
-    animation.duration = 0.2;
-    animation.cumulative = YES;
-    animation.repeatCount = MAXFLOAT;
-    
-    return animation;
-}
+//- (CAAnimation *)imageAnimationForEmptyDataSet:(UIScrollView *) scrollView{
+//    CABasicAnimation *animation = [CABasicAnimation animationWithKeyPath:@"transform"];
+//    animation.fromValue = [NSValue valueWithCATransform3D:CATransform3DIdentity];
+//    animation.toValue = [NSValue valueWithCATransform3D: CATransform3DMakeRotation(M_PI_2, 0.0, 0.0, 1.0) ];
+//    animation.duration = 0.2;
+//    animation.cumulative = YES;
+//    animation.repeatCount = MAXFLOAT;
+//
+//    return animation;
+//}
 - (NSAttributedString *)buttonTitleForEmptyDataSet:(UIScrollView *)scrollView forState:(UIControlState)state {
     return nil;
 }
@@ -270,6 +258,32 @@
 }
 - (BOOL)reachable{
      return  [YYReachability reachability].status != YYReachabilityStatusNone;
+}
+- (UIImage *)loadImage{
+    if (!_loadImage) {
+        _loadImage = [UIImage animatedImageWithImages:self.images.copy duration:0.4];
+    }
+    return _loadImage;
+}
+- (NSMutableArray *)images{
+    if (!_images) {
+        _images = @[].mutableCopy;
+        for (int i = 1; i <= 4; i++) {
+            UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"loading%@", @(i+1)]];
+            if (!image) {
+                break;
+            }
+            [_images addObject:image];
+        }
+        for (int i = 4; i > 0; i--) {
+            UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"loading%@", @(i+1)]];
+            if (!image) {
+                break;
+            }
+            [_images addObject:image];
+        }
+    }
+    return _images;
 }
 
 /*

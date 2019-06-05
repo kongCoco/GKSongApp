@@ -7,6 +7,18 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0F22D9A122A79C1300521090 /* GKSoneNetManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9A022A79C1300521090 /* GKSoneNetManager.m */; };
+		0F22D9A722A7A32600521090 /* GKSongTabBarController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9A622A7A32600521090 /* GKSongTabBarController.m */; };
+		0F22D9AA22A7A41200521090 /* GKHomeViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9A922A7A41200521090 /* GKHomeViewController.m */; };
+		0F22D9AD22A7A43400521090 /* GKClassContentController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9AC22A7A43400521090 /* GKClassContentController.m */; };
+		0F22D9B022A7A44400521090 /* GKMineViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9AF22A7A44400521090 /* GKMineViewController.m */; };
+		0F22D9B322A7B46500521090 /* GKHomeModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9B222A7B46500521090 /* GKHomeModel.m */; };
+		0F22D9B722A7BC2900521090 /* GKNewNavBarView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F22D9B422A7BC2900521090 /* GKNewNavBarView.xib */; };
+		0F22D9B822A7BC2900521090 /* GKNewNavBarView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9B622A7BC2900521090 /* GKNewNavBarView.m */; };
+		0F22D9BB22A7BE2700521090 /* GKClassItemController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9BA22A7BE2700521090 /* GKClassItemController.m */; };
+		0F22D9BE22A7BF5200521090 /* GKClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9BD22A7BF5200521090 /* GKClassModel.m */; };
+		0F22D9C222A7C55600521090 /* GKClassItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9C022A7C55600521090 /* GKClassItemCell.m */; };
+		0F22D9C322A7C55600521090 /* GKClassItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F22D9C122A7C55600521090 /* GKClassItemCell.xib */; };
 		8F91444522A544DD00B18ED6 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F91444322A544DD00B18ED6 /* Main.storyboard */; };
 		8F91444722A544DF00B18ED6 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 8F91444622A544DF00B18ED6 /* Assets.xcassets */; };
 		8F91444A22A544DF00B18ED6 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 8F91444822A544DF00B18ED6 /* LaunchScreen.storyboard */; };
@@ -33,6 +45,28 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		0F22D99F22A79C1300521090 /* GKSoneNetManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSoneNetManager.h; sourceTree = "<group>"; };
+		0F22D9A022A79C1300521090 /* GKSoneNetManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSoneNetManager.m; sourceTree = "<group>"; };
+		0F22D9A522A7A32600521090 /* GKSongTabBarController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKSongTabBarController.h; sourceTree = "<group>"; };
+		0F22D9A622A7A32600521090 /* GKSongTabBarController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKSongTabBarController.m; sourceTree = "<group>"; };
+		0F22D9A822A7A41200521090 /* GKHomeViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKHomeViewController.h; sourceTree = "<group>"; };
+		0F22D9A922A7A41200521090 /* GKHomeViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKHomeViewController.m; sourceTree = "<group>"; };
+		0F22D9AB22A7A43400521090 /* GKClassContentController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKClassContentController.h; sourceTree = "<group>"; };
+		0F22D9AC22A7A43400521090 /* GKClassContentController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKClassContentController.m; sourceTree = "<group>"; };
+		0F22D9AE22A7A44400521090 /* GKMineViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKMineViewController.h; sourceTree = "<group>"; };
+		0F22D9AF22A7A44400521090 /* GKMineViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKMineViewController.m; sourceTree = "<group>"; };
+		0F22D9B122A7B46500521090 /* GKHomeModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKHomeModel.h; sourceTree = "<group>"; };
+		0F22D9B222A7B46500521090 /* GKHomeModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKHomeModel.m; sourceTree = "<group>"; };
+		0F22D9B422A7BC2900521090 /* GKNewNavBarView.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = GKNewNavBarView.xib; sourceTree = "<group>"; };
+		0F22D9B522A7BC2900521090 /* GKNewNavBarView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKNewNavBarView.h; sourceTree = "<group>"; };
+		0F22D9B622A7BC2900521090 /* GKNewNavBarView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKNewNavBarView.m; sourceTree = "<group>"; };
+		0F22D9B922A7BE2700521090 /* GKClassItemController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKClassItemController.h; sourceTree = "<group>"; };
+		0F22D9BA22A7BE2700521090 /* GKClassItemController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKClassItemController.m; sourceTree = "<group>"; };
+		0F22D9BC22A7BF5200521090 /* GKClassModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKClassModel.h; sourceTree = "<group>"; };
+		0F22D9BD22A7BF5200521090 /* GKClassModel.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKClassModel.m; sourceTree = "<group>"; };
+		0F22D9BF22A7C55600521090 /* GKClassItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKClassItemCell.h; sourceTree = "<group>"; };
+		0F22D9C022A7C55600521090 /* GKClassItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKClassItemCell.m; sourceTree = "<group>"; };
+		0F22D9C122A7C55600521090 /* GKClassItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKClassItemCell.xib; sourceTree = "<group>"; };
 		5CAB744FA121BE0DF2995175 /* libPods-GKSongApp.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-GKSongApp.a"; sourceTree = BUILT_PRODUCTS_DIR; };
 		5CF5896AE96EDD1758DADA64 /* Pods-GKSongApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-GKSongApp.release.xcconfig"; path = "Target Support Files/Pods-GKSongApp/Pods-GKSongApp.release.xcconfig"; sourceTree = "<group>"; };
 		8F91443A22A544DD00B18ED6 /* GKSongApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = GKSongApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -93,6 +127,45 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0F22D9A222A7A2F400521090 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				0F22D9A822A7A41200521090 /* GKHomeViewController.h */,
+				0F22D9A922A7A41200521090 /* GKHomeViewController.m */,
+				0F22D9B122A7B46500521090 /* GKHomeModel.h */,
+				0F22D9B222A7B46500521090 /* GKHomeModel.m */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		0F22D9A322A7A2F400521090 /* Discovery */ = {
+			isa = PBXGroup;
+			children = (
+				0F22D9AB22A7A43400521090 /* GKClassContentController.h */,
+				0F22D9AC22A7A43400521090 /* GKClassContentController.m */,
+				0F22D9B522A7BC2900521090 /* GKNewNavBarView.h */,
+				0F22D9B622A7BC2900521090 /* GKNewNavBarView.m */,
+				0F22D9B422A7BC2900521090 /* GKNewNavBarView.xib */,
+				0F22D9B922A7BE2700521090 /* GKClassItemController.h */,
+				0F22D9BA22A7BE2700521090 /* GKClassItemController.m */,
+				0F22D9BC22A7BF5200521090 /* GKClassModel.h */,
+				0F22D9BD22A7BF5200521090 /* GKClassModel.m */,
+				0F22D9BF22A7C55600521090 /* GKClassItemCell.h */,
+				0F22D9C022A7C55600521090 /* GKClassItemCell.m */,
+				0F22D9C122A7C55600521090 /* GKClassItemCell.xib */,
+			);
+			path = Discovery;
+			sourceTree = "<group>";
+		};
+		0F22D9A422A7A2F400521090 /* Mine */ = {
+			isa = PBXGroup;
+			children = (
+				0F22D9AE22A7A44400521090 /* GKMineViewController.h */,
+				0F22D9AF22A7A44400521090 /* GKMineViewController.m */,
+			);
+			path = Mine;
+			sourceTree = "<group>";
+		};
 		8F91443122A544DD00B18ED6 = {
 			isa = PBXGroup;
 			children = (
@@ -116,7 +189,6 @@
 			children = (
 				8F91445D22A5476200B18ED6 /* Base */,
 				8F91445522A5462900B18ED6 /* Class */,
-				8F91445422A5462800B18ED6 /* Tool */,
 				8F91444322A544DD00B18ED6 /* Main.storyboard */,
 				8F91444622A544DF00B18ED6 /* Assets.xcassets */,
 				8F91444822A544DF00B18ED6 /* LaunchScreen.storyboard */,
@@ -126,21 +198,19 @@
 			path = GKSongApp;
 			sourceTree = "<group>";
 		};
-		8F91445422A5462800B18ED6 /* Tool */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Tool;
-			sourceTree = "<group>";
-		};
 		8F91445522A5462900B18ED6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0F22D9A322A7A2F400521090 /* Discovery */,
+				0F22D9A222A7A2F400521090 /* Home */,
+				0F22D9A422A7A2F400521090 /* Mine */,
 				8F91445622A5462900B18ED6 /* AppDelegate.h */,
 				8F91445722A5462900B18ED6 /* AppDelegate.m */,
 				8F91445C22A5465B00B18ED6 /* GKSongApp.pch */,
 				8F91445822A5462900B18ED6 /* ViewController.h */,
 				8F91445922A5462900B18ED6 /* ViewController.m */,
+				0F22D9A522A7A32600521090 /* GKSongTabBarController.h */,
+				0F22D9A622A7A32600521090 /* GKSongTabBarController.m */,
 			);
 			path = Class;
 			sourceTree = "<group>";
@@ -196,6 +266,8 @@
 				8F91447422A5476200B18ED6 /* BaseNetManager.m */,
 				8F91447522A5476200B18ED6 /* BaseNetTool.h */,
 				8F91447622A5476200B18ED6 /* BaseNetTool.m */,
+				0F22D99F22A79C1300521090 /* GKSoneNetManager.h */,
+				0F22D9A022A79C1300521090 /* GKSoneNetManager.m */,
 			);
 			path = NetManager;
 			sourceTree = "<group>";
@@ -301,6 +373,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				8F91444A22A544DF00B18ED6 /* LaunchScreen.storyboard in Resources */,
+				0F22D9C322A7C55600521090 /* GKClassItemCell.xib in Resources */,
+				0F22D9B722A7BC2900521090 /* GKNewNavBarView.xib in Resources */,
 				8F91444722A544DF00B18ED6 /* Assets.xcassets in Resources */,
 				8F91444522A544DD00B18ED6 /* Main.storyboard in Resources */,
 			);
@@ -357,6 +431,7 @@
 			files = (
 				8F91449022A5476200B18ED6 /* BaseView.m in Sources */,
 				8F91448822A5476200B18ED6 /* BaseMacro.m in Sources */,
+				0F22D9A122A79C1300521090 /* GKSoneNetManager.m in Sources */,
 				8F91448322A5476200B18ED6 /* BaseConnectionController.m in Sources */,
 				8F91449222A5476300B18ED6 /* ProgressWKWebView.m in Sources */,
 				8F91448E22A5476200B18ED6 /* BaseCell.m in Sources */,
@@ -364,14 +439,23 @@
 				8F91449122A5476200B18ED6 /* BaseWebController.m in Sources */,
 				8F91445B22A5462900B18ED6 /* ViewController.m in Sources */,
 				8F91448D22A5476200B18ED6 /* BaseNetTool.m in Sources */,
+				0F22D9BE22A7BF5200521090 /* GKClassModel.m in Sources */,
 				8F91448B22A5476200B18ED6 /* BaseDataQueue.m in Sources */,
+				0F22D9B022A7A44400521090 /* GKMineViewController.m in Sources */,
 				8F91448C22A5476200B18ED6 /* BaseNetManager.m in Sources */,
 				8F91448F22A5476200B18ED6 /* BaseTableView.m in Sources */,
+				0F22D9AD22A7A43400521090 /* GKClassContentController.m in Sources */,
+				0F22D9AA22A7A41200521090 /* GKHomeViewController.m in Sources */,
+				0F22D9BB22A7BE2700521090 /* GKClassItemController.m in Sources */,
 				8F91448A22A5476200B18ED6 /* BaseNetModel.m in Sources */,
+				0F22D9C222A7C55600521090 /* GKClassItemCell.m in Sources */,
 				8F91445A22A5462900B18ED6 /* AppDelegate.m in Sources */,
+				0F22D9A722A7A32600521090 /* GKSongTabBarController.m in Sources */,
 				8F91448622A5476200B18ED6 /* BaseTableViewController.m in Sources */,
 				8F91444D22A544DF00B18ED6 /* main.m in Sources */,
+				0F22D9B322A7B46500521090 /* GKHomeModel.m in Sources */,
 				8F91448522A5476200B18ED6 /* BaseRefreshController.m in Sources */,
+				0F22D9B822A7BC2900521090 /* GKNewNavBarView.m in Sources */,
 				8F91448922A5476200B18ED6 /* BaseModel.m in Sources */,
 				8F91448422A5476200B18ED6 /* BaseNavigationController.m in Sources */,
 			);
@@ -522,6 +606,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GKSongApp/Class/GKSongApp.pch";
 				INFOPLIST_FILE = GKSongApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -544,6 +629,7 @@
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
 				GCC_PREFIX_HEADER = "$(SRCROOT)/GKSongApp/Class/GKSongApp.pch";
 				INFOPLIST_FILE = GKSongApp/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 9.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

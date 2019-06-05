@@ -23,10 +23,17 @@
 
 #import "BaseMacro.h"
 #import "BaseModel.h"
+#import "BaseViewController.h"
+#import "BaseTableViewController.h"
 #import "BaseConnectionController.h"
 #import "BaseRefreshController.h"
 #import "BaseNavigationController.h"
 #import "BaseNetManager.h"
 #import "BaseCell.h"
+
+#import "GKSoneNetManager.h"
+
+static  NSString *BaseUrl = @"http://mobile.ximalaya.com/";
+#define kBaseUrl(url)  [NSString stringWithFormat:@"%@%@", BaseUrl, url]
 
 #endif /* GKSongApp_pch */
