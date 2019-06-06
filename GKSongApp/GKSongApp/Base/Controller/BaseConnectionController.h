@@ -11,6 +11,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseConnectionController : BaseRefreshController<UICollectionViewDelegate,UICollectionViewDataSource>
+{
+    UICollectionView *_collectionView;
+}
 @property (strong, nonatomic)UICollectionView * collectionView;
 @end
 

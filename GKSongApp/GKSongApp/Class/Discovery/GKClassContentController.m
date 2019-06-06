@@ -40,7 +40,22 @@
         make.top.equalTo(self.navBarView.mas_bottom);
     }];
     [self.navBarView.mainView addSubview:self.vmessage];
+    UIScrollView *scrow = [self.vmessage valueForKey:@"scrollView"];
+    if (scrow) {
+        scrow.scrollsToTop = NO;
+    }
     [self loadData];
+    NSMutableArray *images = [[NSMutableArray alloc] init];
+    for (int i = 1; i<=6; i++) {
+        UIImage *image = [UIImage imageNamed:[NSString stringWithFormat:@"playing%@",@(i)]];
+        if (!image) {
+            break;
+        }
+        [images addObject:image];
+    }
+    UIImage *play = [UIImage animatedImageWithImages:images duration:0.5];
+    [self.navBarView.moreBtn setImage:play forState:UIControlStateNormal];
+    
 }
 - (void)loadData{
     self.listTitles = @[].mutableCopy;
@@ -54,7 +69,7 @@
     } failure:^(NSString * _Nonnull error) {
         
     }];
-    self.listHotWords = @[@"瑞幸纳斯达克上市",@"阿里回港上市",@"百度在BAT中已经掉队",@"韩国队公开道歉",@"应届月薪不足六千"];
+    self.listHotWords = @[@"动起来",@"渡情",@"你知道我在等你吗",@"洋葱",@"一千年以后"];
     [self.vmessage reloadData:self.listHotWords.count];
 }
 #pragma mark VTMagicViewDataSource,VTMagicViewDelegate
@@ -119,7 +134,7 @@
     UILabel *label = [[UILabel alloc] init];
     label.font = [UIFont systemFontOfSize:14];
     label.textColor = Appx333333;
-   label.text = self.listHotWords[index];
+    label.text = self.listHotWords[index];
     label.textAlignment = NSTextAlignmentLeft;
     return label;
 }
@@ -171,7 +186,7 @@
         _vmessage = [[KLRecycleScrollView alloc] initWithFrame:CGRectMake(0,0,SCREEN_WIDTH - 100, 35)];
         _vmessage.delegate = self;
         _vmessage.direction = KLRecycleScrollViewDirectionTop;
-        _vmessage.pagingEnabled = YES;
+        _vmessage.pagingEnabled = NO;
         _vmessage.timerEnabled = YES;
         _vmessage.scrollInterval = 5;
         _vmessage.backgroundColor = [UIColor whiteColor];

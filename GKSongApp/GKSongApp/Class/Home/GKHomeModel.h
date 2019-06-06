@@ -45,6 +45,7 @@ NS_ASSUME_NONNULL_BEGIN
 @property (copy, nonatomic) NSString *trackTitle;
 @property (copy, nonatomic) NSString *vipFreeType;
 
+@property (nonatomic) CGSize  size; 
 @end
 @interface GKHomeBanner : BaseModel
 @property (copy, nonatomic) NSString *focusCurrentId;

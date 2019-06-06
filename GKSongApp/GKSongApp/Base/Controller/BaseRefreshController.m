@@ -36,6 +36,12 @@
 #pragma mark - refresh 刷新处理
 - (void)setupRefresh:(UIScrollView *)scrollView option:(ATRefreshOption)option {
     self.scrollView = scrollView;
+    if (option == ATRefreshNone) {
+        if ([self respondsToSelector:@selector(headerRefreshing)]) {
+            [self headerRefreshing];
+        }
+        return;
+    }
     if (option & ATHeaderRefresh) {
         MJRefreshGifHeader *header = [MJRefreshGifHeader headerWithRefreshingTarget:self refreshingAction:@selector(headerRefreshing)];
         header.automaticallyChangeAlpha = YES;
@@ -189,7 +195,7 @@
     paragraph.alignment = NSTextAlignmentCenter;
     NSString *text = self.isRefreshing ? FDMSG_Home_DataRefresh : self.emptyTitle;
     NSDictionary* attributes = @{NSFontAttributeName : [UIFont systemFontOfSize:14.0f],
-                                 NSForegroundColorAttributeName :self.isRefreshing ?AppColor :Appx999999,
+                                 NSForegroundColorAttributeName :Appx999999,
                                  NSParagraphStyleAttributeName : paragraph};
     if (![self reachable]) {
         text = FDNoNetworkMsg;

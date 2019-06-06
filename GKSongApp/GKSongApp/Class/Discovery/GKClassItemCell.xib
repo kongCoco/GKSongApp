@@ -26,7 +26,20 @@
                     </imageView>
                     <view clipsSubviews="YES" contentMode="scaleAspectFill" translatesAutoresizingMaskIntoConstraints="NO" id="6m8-G2-x1A">
                         <rect key="frame" x="0.0" y="0.0" width="128" height="128"/>
+                        <subviews>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="RUm-pP-L18">
+                                <rect key="frame" x="8" y="105.5" width="112" height="14.5"/>
+                                <fontDescription key="fontDescription" type="system" pointSize="12"/>
+                                <color key="textColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                        </subviews>
                         <color key="backgroundColor" red="0.0" green="0.0" blue="0.0" alpha="0.14999999999999999" colorSpace="calibratedRGB"/>
+                        <constraints>
+                            <constraint firstAttribute="trailing" secondItem="RUm-pP-L18" secondAttribute="trailing" constant="8" id="3t1-bs-DtI"/>
+                            <constraint firstAttribute="bottom" secondItem="RUm-pP-L18" secondAttribute="bottom" constant="8" id="E3I-up-e4M"/>
+                            <constraint firstItem="RUm-pP-L18" firstAttribute="leading" secondItem="6m8-G2-x1A" secondAttribute="leading" constant="8" id="y0F-NV-RoC"/>
+                        </constraints>
                     </view>
                     <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" numberOfLines="2" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="4Kp-1m-6J3">
                         <rect key="frame" x="8" y="136" width="112" height="18"/>
@@ -46,12 +59,13 @@
                 <constraint firstAttribute="trailing" secondItem="xft-O6-lXv" secondAttribute="trailing" id="bCq-iv-Bz9"/>
                 <constraint firstItem="6m8-G2-x1A" firstAttribute="bottom" secondItem="xft-O6-lXv" secondAttribute="bottom" id="g7m-8H-vel"/>
                 <constraint firstItem="6m8-G2-x1A" firstAttribute="leading" secondItem="xft-O6-lXv" secondAttribute="leading" id="iAu-p5-hEu"/>
-                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Kp-1m-6J3" secondAttribute="bottom" id="j6D-8U-7Z3"/>
+                <constraint firstAttribute="bottom" relation="greaterThanOrEqual" secondItem="4Kp-1m-6J3" secondAttribute="bottom" constant="5" id="j6D-8U-7Z3"/>
                 <constraint firstItem="4Kp-1m-6J3" firstAttribute="leading" secondItem="gTV-IL-0wX" secondAttribute="leading" constant="8" id="wdK-Na-m0L"/>
             </constraints>
             <size key="customSize" width="128" height="167"/>
             <connections>
                 <outlet property="imageV" destination="xft-O6-lXv" id="TPe-xc-fej"/>
+                <outlet property="nickNameLab" destination="RUm-pP-L18" id="hia-B0-1cd"/>
                 <outlet property="titleLab" destination="4Kp-1m-6J3" id="Jzu-uz-TJV"/>
             </connections>
             <point key="canvasLocation" x="200" y="196.55172413793105"/>

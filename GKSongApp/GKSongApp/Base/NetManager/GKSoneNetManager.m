@@ -45,4 +45,15 @@
                                  };
     [BaseNetManager method:HttpMethodGet urlString:kBaseUrl(@"mobile/discovery/v1/category/album") params:params success:success failure:failure];
 }
++ (void)songDetail:(NSString *)albumId title:(NSString *)title page:(NSInteger)page success:(void(^)(id object))success failure:(void(^)(NSString *error))failure{
+    NSDictionary *params = @{
+                             @"albumId": albumId?:@"",
+                             @"title": title?:@"",
+                             @"device": @"ios",
+                             @"position": @"1",
+                             @"isAsc": @"1"
+                             };
+    NSString *url = [NSString stringWithFormat:@"mobile/others/ca/album/track/%@/true/%@/%@?",albumId?:@"",@(page),@(RefreshPageSize)];
+    [BaseNetManager method:HttpMethodPost urlString:kBaseUrl(url) params:params success:success failure:failure];
+}
 @end

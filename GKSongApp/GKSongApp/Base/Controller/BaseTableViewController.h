@@ -10,9 +10,9 @@
 NS_ASSUME_NONNULL_BEGIN
 
 @interface BaseTableViewController : BaseRefreshController<UITableViewDelegate,UITableViewDataSource>
+{
+    UITableView *_tableView;
+}
 @property (strong, nonatomic) UITableView *tableView;
-@end
-@interface BaseEmptyTableController : BaseTableViewController
-
 @end
 NS_ASSUME_NONNULL_END

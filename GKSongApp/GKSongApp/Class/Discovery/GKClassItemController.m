@@ -7,6 +7,8 @@
 //
 
 #import "GKClassItemController.h"
+#import "GKClassDetailController.h"
+#import "UIScrollView+PullBig.h"
 #import "GKHomeModel.h"
 #import "GKClassItemCell.h"
 @interface GKClassItemController ()
@@ -27,6 +29,8 @@
 }
 - (void)loadUI{
     self.listData = @[].mutableCopy;
+    
+    
     [self setupEmpty:self.collectionView];
     [self setupRefresh:self.collectionView option:ATRefreshDefault];
 }
@@ -67,16 +71,18 @@
     CGFloat width = (SCREEN_WIDTH - 3*2)/2.0;
     CGFloat height = width + 50;
     return CGSizeMake(width, height);
+////    CGSize size = @available(iOS 10.0, *) ? UICollectionViewFlowLayoutAutomaticSize : CGSizeMake(width, height)
+//    if (@available(iOS 10.0, *)) {
+//        return UICollectionViewFlowLayoutAutomaticSize;
+//    } else {
+//        return CGSizeMake(width, height);
+//    }
 }
 - (UICollectionViewCell *)collectionView:(UICollectionView *)collectionView cellForItemAtIndexPath:(NSIndexPath *)indexPath
 {
     GKClassItemCell *cell = [GKClassItemCell cellForCollectionView:collectionView indexPath:indexPath];
-    GKHomeClassModel *model = self.listData[indexPath.row];
-    if ([model isKindOfClass:GKHomeClassModel.class]) {
-        cell.titleLab.preferredMaxLayoutWidth = SCREEN_WIDTH/2 - 20;
-        cell.titleLab.text = model.title ?:@"";
-        [cell.imageV sd_setImageWithURL:[NSURL URLWithString:model.coverMiddle] placeholderImage:placeholders];
-    }
+    cell.classModel = self.listData[indexPath.row];
+    
     return cell;
 }
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumLineSpacingForSectionAtIndex:(NSInteger)section{
@@ -85,9 +91,41 @@
 - (CGFloat)collectionView:(UICollectionView *)collectionView layout:(UICollectionViewLayout*)collectionViewLayout minimumInteritemSpacingForSectionAtIndex:(NSInteger)section{
     return 2;
 }
-- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
-
+- (BOOL) shouldInvalidateLayoutForBoundsChange:(CGRect)newBounds{
+    return YES;
 }
+- (void)collectionView:(UICollectionView *)collectionView didSelectItemAtIndexPath:(NSIndexPath *)indexPath{
+    [self.navigationController pushViewController:[GKClassDetailController vcWithClassModel:self.listData[indexPath.row]] animated:YES];
+}
+- (UICollectionView *)collectionView
+{
+    if (!_collectionView) {
+        CGFloat width = (SCREEN_WIDTH - 3*2)/2.0;
+        CGFloat height = width + 50;
+        UICollectionViewFlowLayout *layout = [[UICollectionViewFlowLayout alloc] init];
+//        if (@available(iOS 10.0, *)) {
+//            layout.itemSize = UICollectionViewFlowLayoutAutomaticSize;
+//            layout.estimatedItemSize = UICollectionViewFlowLayoutAutomaticSize;
+//        } else {
+//            layout.itemSize = CGSizeMake(width, height);
+//            layout.estimatedItemSize = CGSizeMake(width, height);
+//        }
+        layout.scrollDirection = UICollectionViewScrollDirectionVertical;
+        layout.minimumLineSpacing = 2;
+        layout.minimumInteritemSpacing = 2;
 
+        _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
+        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.dataSource = self;
+        _collectionView.delegate = self;
+        _collectionView.showsVerticalScrollIndicator = NO;
+        _collectionView.scrollEnabled = YES;
+        [_collectionView registerClass:UICollectionViewCell.class forCellWithReuseIdentifier:NSStringFromClass(UICollectionViewCell.class)];
+        if (@available(iOS 11.0, *)) {
+            _collectionView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
+        }
+    }
+    return _collectionView;
+}
 
 @end

@@ -17,11 +17,13 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
     [self.view addSubview:self.tableView];
-
-    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
-        make.edges.equalTo(self.tableView.superview);
-    }];
-    
+//    [self.tableView mas_makeConstraints:^(MASConstraintMaker *make) {
+//        make.edges.equalTo(self.tableView.superview);
+//    }];
+    NSMutableArray *temp = [[NSMutableArray alloc] init];
+    [temp addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"H:|-0-[_tableView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_tableView)]];
+    [temp addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_tableView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_tableView)]];
+    [self.view addConstraints:temp];
     self.tableView.tableHeaderView = [UIView new];
     self.tableView.tableFooterView = [UIView new];
 }
@@ -38,6 +40,7 @@
         _tableView.rowHeight = UITableViewAutomaticDimension;
         _tableView.separatorColor = [UIColor clearColor];
         _tableView.estimatedRowHeight = 200;
+        _tableView.translatesAutoresizingMaskIntoConstraints = NO;
         [_tableView registerClass:[UITableViewCell class] forCellReuseIdentifier:NSStringFromClass([UITableViewCell class])];
         if (@available(iOS 11.0, *)) {
             _tableView.contentInsetAdjustmentBehavior = UIScrollViewContentInsetAdjustmentNever;
@@ -94,15 +97,4 @@
 
 @end
 
-
-@implementation BaseEmptyTableController
-
-- (void)viewDidLoad{
-    [super viewDidLoad];
-}
-- (void)refreshData:(NSInteger)page{
-    [self endRefreshFailure];
-}
-
-@end
 

@@ -14,7 +14,7 @@ NS_ASSUME_NONNULL_BEGIN
 + (void)homeSong:(NSString *)categoryId success:(void(^)(id object))success failure:(void(^)(NSString *error))failure;
 + (void)homeClass:(NSString *)categoryId success:(void(^)(id object))success failure:(void(^)(NSString *error))failure;
 + (void)homeClssItem:(NSString *)categoryId tagName:(NSString *)tagName page:(NSInteger)page success:(void(^)(id object))success failure:(void(^)(NSString *error))failure;
-
++ (void)songDetail:(NSString *)albumId title:(NSString *)title page:(NSInteger)page success:(void(^)(id object))success failure:(void(^)(NSString *error))failure;
 @end
 
 NS_ASSUME_NONNULL_END
