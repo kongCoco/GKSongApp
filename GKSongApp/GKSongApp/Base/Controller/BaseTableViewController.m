@@ -33,7 +33,7 @@
     if (!_tableView) {
         _tableView = [[UITableView alloc]initWithFrame:CGRectZero style:UITableViewStylePlain];
         _tableView.separatorStyle = UITableViewCellSeparatorStyleNone;
-        _tableView.backgroundColor = [UIColor clearColor];
+        _tableView.backgroundColor = [UIColor colorWithRGB:0xf6f6f6];
         _tableView.showsVerticalScrollIndicator = NO;
         _tableView.dataSource = self;
         _tableView.delegate = self;

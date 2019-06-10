@@ -11,20 +11,23 @@
 NS_ASSUME_NONNULL_BEGIN
 @class GKClassDetailNavBar;
 @interface GKClassDetailHeadView : UIView
-@property (weak, nonatomic) IBOutlet UIImageView *imageBg;
-@property (weak, nonatomic) IBOutlet UIImageView *imageV;
-@property (weak, nonatomic) IBOutlet UILabel *titleLab;
-@property (weak, nonatomic) IBOutlet UILabel *subTitleLab;
-@property (weak, nonatomic) IBOutlet GKClassDetailNavBar *navBar;
+@property (strong, nonatomic) UIImageView *imageBg;
+@property (strong, nonatomic) UIImageView *imageV;
+@property (strong, nonatomic) UILabel *titleLab;
+@property (strong, nonatomic) UILabel *subTitleLab;
+//@property (strong, nonatomic) GKClassDetailNavBar *navBar;
 
 @property (strong, nonatomic) GKClassAlbumModel *model;
 
 @end
 
 @interface GKClassDetailNavBar : UIView
+@property (strong, nonatomic) UIImageView *imageV;
 @property (strong, nonatomic) UILabel *navTitleLab;
 @property (strong, nonatomic) UIButton *backBtn;
 @property (strong, nonatomic) UIButton *playBtn;
+
+@property (assign, nonatomic) CGFloat alphas;
 @end
 
 NS_ASSUME_NONNULL_END

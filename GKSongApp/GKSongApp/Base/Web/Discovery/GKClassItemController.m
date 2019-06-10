@@ -8,7 +8,6 @@
 
 #import "GKClassItemController.h"
 #import "GKClassDetailController.h"
-#import "UIScrollView+PullBig.h"
 #import "GKHomeModel.h"
 #import "GKClassItemCell.h"
 @interface GKClassItemController ()

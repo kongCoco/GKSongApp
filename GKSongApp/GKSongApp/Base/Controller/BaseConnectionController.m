@@ -24,7 +24,7 @@
     [temp addObjectsFromArray:[NSLayoutConstraint constraintsWithVisualFormat:@"V:|-0-[_collectionView]-0-|" options:0 metrics:nil views:NSDictionaryOfVariableBindings(_collectionView)]];
     [self.view addConstraints:temp];
     
-    self.collectionView.backgroundColor = [UIColor colorWithRGB:0xffffff];
+    self.collectionView.backgroundColor = [UIColor colorWithRGB:0xf6f6f6];
 }
 
 - (UICollectionView *)collectionView
@@ -34,7 +34,7 @@
         
         layout.scrollDirection = UICollectionViewScrollDirectionVertical;
         _collectionView = [[UICollectionView alloc]initWithFrame:CGRectZero collectionViewLayout:layout];
-        _collectionView.backgroundColor = [UIColor whiteColor];
+        _collectionView.backgroundColor = [UIColor colorWithRGB:0xf6f6f6];
         _collectionView.dataSource = self;
         _collectionView.delegate = self;
         _collectionView.showsVerticalScrollIndicator = NO;
