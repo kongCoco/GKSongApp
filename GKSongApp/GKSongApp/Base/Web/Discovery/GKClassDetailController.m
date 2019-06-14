@@ -7,6 +7,7 @@
 //
 
 #import "GKClassDetailController.h"
+#import "GKPlayerViewController.h"
 #import "GKClassDetailModel.h"
 #import "GKClassDetailCell.h"
 #import "GKClassDetailHeadView.h"
@@ -46,7 +47,7 @@ static CGFloat height = 0;
         make.left.right.top.equalTo(self.headView.superview);
         make.height.offset(height);
     }];
-    [self.tableView setContentInset:UIEdgeInsetsMake(height, 0, 0, 0)];
+    [self.tableView setContentInset:UIEdgeInsetsMake(height, 0, TAB_BAR_ADDING+ 40,0)];
     [self.view addSubview:self.navBar];
     [self.navBar mas_makeConstraints:^(MASConstraintMaker *make) {
         make.left.right.top.equalTo(self.navBar.superview);
@@ -86,6 +87,10 @@ static CGFloat height = 0;
 }
 - (void)tableView:(UITableView *)tableView didSelectRowAtIndexPath:(NSIndexPath *)indexPath{
     [tableView deselectRowAtIndexPath:indexPath animated:YES];
+    GKClassTrackModel *model = self.listData[indexPath.row];
+    GKPlayerViewController *vc = [GKPlayerViewController vcWithModel:model];
+    [self.navigationController pushViewController:vc animated:YES];
+    //[BasePlayer sharedInstance].playUrl = model.playUrl32;
 }
 - (void)scrollViewDidScroll:(UIScrollView *)scrollView{
    // [self changeNavigationBarAlpha:scrollView];

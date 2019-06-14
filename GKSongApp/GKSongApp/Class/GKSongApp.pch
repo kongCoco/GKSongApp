@@ -32,6 +32,7 @@
 #import "BaseCell.h"
 
 #import "GKSoneNetManager.h"
+#import "BasePlayer.h"
 
 static  NSString *BaseUrl = @"http://mobile.ximalaya.com/";
 #define kBaseUrl(url)  [NSString stringWithFormat:@"%@%@", BaseUrl, url]

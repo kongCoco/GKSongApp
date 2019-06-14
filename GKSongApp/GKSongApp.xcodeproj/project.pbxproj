@@ -19,6 +19,10 @@
 		0F22D9BE22A7BF5200521090 /* GKClassModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9BD22A7BF5200521090 /* GKClassModel.m */; };
 		0F22D9C222A7C55600521090 /* GKClassItemCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0F22D9C022A7C55600521090 /* GKClassItemCell.m */; };
 		0F22D9C322A7C55600521090 /* GKClassItemCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 0F22D9C122A7C55600521090 /* GKClassItemCell.xib */; };
+		0FE0FE8D22AE44B90052C5CA /* BasePlayer.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0FE8C22AE44B90052C5CA /* BasePlayer.m */; };
+		0FE0FE9022AE5D140052C5CA /* GKPlayerManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0FE8F22AE5D140052C5CA /* GKPlayerManager.m */; };
+		0FE0FE9322AE67890052C5CA /* GKPlayerViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0FE9222AE67890052C5CA /* GKPlayerViewController.m */; };
+		0FE0FE9622AE68B20052C5CA /* GKPlayRotatingView.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FE0FE9522AE68B20052C5CA /* GKPlayRotatingView.m */; };
 		0FF235E722A8F5CD00F11F8C /* GKClassDetailController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF235E622A8F5CD00F11F8C /* GKClassDetailController.m */; };
 		0FF235EA22A8F8A000F11F8C /* GKClassDetailModel.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF235E922A8F8A000F11F8C /* GKClassDetailModel.m */; };
 		0FF235EE22A8FC8200F11F8C /* GKClassDetailCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0FF235EC22A8FC8200F11F8C /* GKClassDetailCell.m */; };
@@ -72,6 +76,14 @@
 		0F22D9BF22A7C55600521090 /* GKClassItemCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKClassItemCell.h; sourceTree = "<group>"; };
 		0F22D9C022A7C55600521090 /* GKClassItemCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKClassItemCell.m; sourceTree = "<group>"; };
 		0F22D9C122A7C55600521090 /* GKClassItemCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = GKClassItemCell.xib; sourceTree = "<group>"; };
+		0FE0FE8B22AE44B90052C5CA /* BasePlayer.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BasePlayer.h; sourceTree = "<group>"; };
+		0FE0FE8C22AE44B90052C5CA /* BasePlayer.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BasePlayer.m; sourceTree = "<group>"; };
+		0FE0FE8E22AE5D140052C5CA /* GKPlayerManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKPlayerManager.h; sourceTree = "<group>"; };
+		0FE0FE8F22AE5D140052C5CA /* GKPlayerManager.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKPlayerManager.m; sourceTree = "<group>"; };
+		0FE0FE9122AE67890052C5CA /* GKPlayerViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKPlayerViewController.h; sourceTree = "<group>"; };
+		0FE0FE9222AE67890052C5CA /* GKPlayerViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKPlayerViewController.m; sourceTree = "<group>"; };
+		0FE0FE9422AE68B20052C5CA /* GKPlayRotatingView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GKPlayRotatingView.h; sourceTree = "<group>"; };
+		0FE0FE9522AE68B20052C5CA /* GKPlayRotatingView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GKPlayRotatingView.m; sourceTree = "<group>"; };
 		0FF235E522A8F5CD00F11F8C /* GKClassDetailController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKClassDetailController.h; sourceTree = "<group>"; };
 		0FF235E622A8F5CD00F11F8C /* GKClassDetailController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GKClassDetailController.m; sourceTree = "<group>"; };
 		0FF235E822A8F8A000F11F8C /* GKClassDetailModel.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GKClassDetailModel.h; sourceTree = "<group>"; };
@@ -189,6 +201,21 @@
 			path = Mine;
 			sourceTree = "<group>";
 		};
+		0FE0FE8A22AE43A00052C5CA /* Play */ = {
+			isa = PBXGroup;
+			children = (
+				0FE0FE9422AE68B20052C5CA /* GKPlayRotatingView.h */,
+				0FE0FE9522AE68B20052C5CA /* GKPlayRotatingView.m */,
+				0FE0FE8B22AE44B90052C5CA /* BasePlayer.h */,
+				0FE0FE8C22AE44B90052C5CA /* BasePlayer.m */,
+				0FE0FE8E22AE5D140052C5CA /* GKPlayerManager.h */,
+				0FE0FE8F22AE5D140052C5CA /* GKPlayerManager.m */,
+				0FE0FE9122AE67890052C5CA /* GKPlayerViewController.h */,
+				0FE0FE9222AE67890052C5CA /* GKPlayerViewController.m */,
+			);
+			path = Play;
+			sourceTree = "<group>";
+		};
 		0FF235F522A9103D00F11F8C /* Tool */ = {
 			isa = PBXGroup;
 			children = (
@@ -232,6 +259,7 @@
 		8F91445522A5462900B18ED6 /* Class */ = {
 			isa = PBXGroup;
 			children = (
+				0FE0FE8A22AE43A00052C5CA /* Play */,
 				0F22D9A222A7A2F400521090 /* Home */,
 				0F22D9A422A7A2F400521090 /* Mine */,
 				8F91445622A5462900B18ED6 /* AppDelegate.h */,
@@ -464,6 +492,8 @@
 				8F91449022A5476200B18ED6 /* BaseView.m in Sources */,
 				0FF235EA22A8F8A000F11F8C /* GKClassDetailModel.m in Sources */,
 				8F91448822A5476200B18ED6 /* BaseMacro.m in Sources */,
+				0FE0FE9022AE5D140052C5CA /* GKPlayerManager.m in Sources */,
+				0FE0FE8D22AE44B90052C5CA /* BasePlayer.m in Sources */,
 				0F22D9A122A79C1300521090 /* GKSoneNetManager.m in Sources */,
 				0FF235F222A9067300F11F8C /* GKClassDetailHeadView.m in Sources */,
 				8F91448322A5476200B18ED6 /* BaseConnectionController.m in Sources */,
@@ -472,6 +502,8 @@
 				8F91448722A5476200B18ED6 /* BaseViewController.m in Sources */,
 				8F91449122A5476200B18ED6 /* BaseWebController.m in Sources */,
 				0FF235EE22A8FC8200F11F8C /* GKClassDetailCell.m in Sources */,
+				0FE0FE9622AE68B20052C5CA /* GKPlayRotatingView.m in Sources */,
+				0FE0FE9322AE67890052C5CA /* GKPlayerViewController.m in Sources */,
 				8F91445B22A5462900B18ED6 /* ViewController.m in Sources */,
 				8F91448D22A5476200B18ED6 /* BaseNetTool.m in Sources */,
 				0F22D9BE22A7BF5200521090 /* GKClassModel.m in Sources */,

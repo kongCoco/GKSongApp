@@ -24,6 +24,8 @@ PODS:
   - FMDB (2.7.5):
     - FMDB/standard (= 2.7.5)
   - FMDB/standard (2.7.5)
+  - FreeStreamer (4.0.0):
+    - Reachability (~> 3.0)
   - HHTransition (1.2.0)
   - IDMPhotoBrowser (1.10.2):
     - DACircularProgress
@@ -39,6 +41,7 @@ PODS:
     - Masonry
   - pop (1.0.12)
   - QBImagePickerController (3.4.0)
+  - Reachability (3.2)
   - SDCycleScrollView (1.80):
     - SDWebImage (>= 5.0.0)
   - SDWebImage (5.0.5):
@@ -58,6 +61,7 @@ DEPENDENCIES:
   - EAIntroView
   - FDFullscreenPopGesture (= 1.1)
   - FMDB
+  - FreeStreamer
   - HHTransition
   - IDMPhotoBrowser
   - KLRecycleScrollView
@@ -83,6 +87,7 @@ SPEC REPOS:
     - EARestrictedScrollView
     - FDFullscreenPopGesture
     - FMDB
+    - FreeStreamer
     - HHTransition
     - IDMPhotoBrowser
     - KLRecycleScrollView
@@ -91,6 +96,7 @@ SPEC REPOS:
     - MGJRouter
     - pop
     - QBImagePickerController
+    - Reachability
     - SDCycleScrollView
     - SDWebImage
     - YYKit
@@ -128,6 +134,7 @@ SPEC CHECKSUMS:
   EARestrictedScrollView: b0c2a3f92fb2610bb44d71c5e4893777c89e45ef
   FDFullscreenPopGesture: a8a620179e3d9c40e8e00256dcee1c1a27c6d0f0
   FMDB: 2ce00b547f966261cd18927a3ddb07cb6f3db82a
+  FreeStreamer: 7e9c976045701ac2f7e9c14c17245203c37bf2ea
   HHTransition: 35c278fbe8374cdf0931a805aef066d52256a897
   IDMPhotoBrowser: 4bb459b1faffc228e92bccdf7c54ad6d6b7e8c37
   KLRecycleScrollView: 1dce1ccb7f94ec96b5c1973b568a2c5926d47c7c
@@ -139,11 +146,12 @@ SPEC CHECKSUMS:
   MMPopupView: b717b7fe100707ef3fcd17c93b050e4b9d0a60da
   pop: d582054913807fd11fd50bfe6a539d91c7e1a55a
   QBImagePickerController: d54cf93db6decf26baf6ed3472f336ef35cae022
+  Reachability: 33e18b67625424e47b6cde6d202dce689ad7af96
   SDCycleScrollView: b3c9a5ed840c771c4938978174c7c9d9feefeb96
   SDWebImage: f86b0a0713195d1c734335d010697d44af10d165
   VTMagic: b49e5f456dbcbfd9a3588ba92417233a105bc193
   YYKit: 7cda43304a8dc3696c449041e2cb3107b4e236e7
 
-PODFILE CHECKSUM: 27002a23a13c616f57f518023dd506fb6f0f817d
+PODFILE CHECKSUM: 736588b990a2dde0c1b419306e13b3e8cbcaeb27
 
 COCOAPODS: 1.7.1

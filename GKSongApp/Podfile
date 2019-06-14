@@ -26,6 +26,8 @@ target :GKSongApp  do
     pod 'HHTransition'
     pod 'SDCycleScrollView'
     pod 'KLRecycleScrollView'
+    pod 'FreeStreamer'
+    
 #   pod 'YBImageBrowser'
 end
 
